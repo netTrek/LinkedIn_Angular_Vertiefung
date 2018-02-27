@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 } )
 export class AppComponent {
 
-  title        = 'in';
-  showUserInfo = true;
+  title = 'in';
 
-  class2bind = 'class-name-1 class-name-2 class-name-3';
+  // fontColor = 'red';
+  // fontSize  = .75;
+
+  styleObj = {
+    'color'    : 'red',
+    'font-size': '.75em'
+  };
 
 }
