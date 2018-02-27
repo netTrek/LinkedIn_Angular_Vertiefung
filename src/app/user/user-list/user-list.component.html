@@ -10,9 +10,12 @@
   middle
 -->
 
-<in-user-name *ngFor="let user of users; even as e"
-              [user]="user"
-              [isSelected]="selectedUsr===user"
-              [class.even]="e"
-              (selectUsr)="onSelectedUsr ( $event )"
-></in-user-name>
+
+<ng-template ngFor [ngForOf]="users" let-user let-e="even">
+  <in-user-name [user]="user"
+                [isSelected]="selectedUsr===user"
+                [class.even]="e"
+                (selectUsr)="onSelectedUsr ( $event )"
+  ></in-user-name>
+  <hr>
+</ng-template>
