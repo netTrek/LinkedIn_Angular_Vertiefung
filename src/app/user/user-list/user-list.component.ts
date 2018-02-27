@@ -7,7 +7,7 @@ import {User} from '../user';
   styleUrls: [ './user-list.component.scss' ],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class UserListComponent implements OnInit{
+export class UserListComponent implements OnInit {
 
   users: User[] = [
     { name: 'Frank Müller', age: 12},
@@ -16,12 +16,12 @@ export class UserListComponent implements OnInit{
     { name: 'Paul Müller', age: 15}
   ];
 
-  selectedUsrName: string;
+  selectedUsr: User;
 
   constructor() { }
   ngOnInit() {  }
 
-  onSelectedUsr ( selectedUsrName: string ) {
-    this.selectedUsrName = selectedUsrName;
+  onSelectedUsr ( selectedUsr: User) {
+    this.selectedUsr = selectedUsr;
   }
 }

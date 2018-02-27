@@ -1,27 +1,18 @@
 <h3>User List</h3>
 <!-- - {{selectedUsrName}}-->
 <!--
-
-<in-user-name [name]="users[0]"
-              [isSelected]="selectedUsrName===users[0]"
-              (selectUsr)="onSelectedUsr ( $event )"
-></in-user-name>
-<in-user-name [name]="users[1]"
-              [isSelected]="selectedUsrName===users[1]"
-              (selectUsr)="onSelectedUsr ( $event )"
-></in-user-name>
-<in-user-name [name]="users[2]"
-              [isSelected]="selectedUsrName===users[2]"
-              (selectUsr)="onSelectedUsr ( $event )"
-></in-user-name>
-<in-user-name [name]="users[3]"
-              [isSelected]="selectedUsrName===users[3]"
-              (selectUsr)="onSelectedUsr ( $event )"
-></in-user-name>
+  index
+  count
+  even
+  odd
+  first
+  last
+  middle
 -->
-<in-user-name *ngFor="let user of users"
-              [name]="user.name"
-              [age]="user.age"
-              [isSelected]="selectedUsrName===user"
+
+<in-user-name *ngFor="let user of users; even as e"
+              [user]="user"
+              [isSelected]="selectedUsr===user"
+              [class.even]="e"
               (selectUsr)="onSelectedUsr ( $event )"
 ></in-user-name>
