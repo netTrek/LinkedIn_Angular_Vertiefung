@@ -20,6 +20,8 @@ export class UserNameComponent implements OnInit {
       this._name      = value;
     }
   }
+  @Input()
+  age: number;
 
   private _name = 'Saban Ünlü';
 

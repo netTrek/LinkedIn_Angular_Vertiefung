@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {User} from '../user';
 
 @Component ( {
   selector: 'in-user-list',
@@ -8,10 +9,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class UserListComponent implements OnInit{
 
-  users: string[] = [
-    'Frank Müller',
-    'Peter Mustermann',
-    'Saban Ünlü'
+  users: User[] = [
+    { name: 'Frank Müller', age: 12},
+    { name: 'Hans Müller', age: 13},
+    { name: 'Peter Müller', age: 14},
+    { name: 'Paul Müller', age: 15}
   ];
 
   selectedUsrName: string;
