@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'in';
-  showUserInfo = true;
 
+  showImg = true;
+  title = 'in';
+
+  toggle() {
+    this.showImg = !this.showImg;
+  }
 }

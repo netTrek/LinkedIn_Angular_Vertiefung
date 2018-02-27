@@ -4,7 +4,13 @@
     Welcome to {{ title }}!
   </h1>
 
-  <in-user *ngIf="showUserInfo"></in-user>
+  <img  *ngIf="showImg"
+        src="../assets/img/linkedin-logo.png"
+        alt="logo">
+
+  <hr>
+  <button (click)="toggle()">toggle</button>
+  <in-user></in-user>
 
 </div>
 <footer>
