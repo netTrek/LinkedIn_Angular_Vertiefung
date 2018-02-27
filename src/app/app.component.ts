@@ -9,7 +9,7 @@ export class AppComponent {
 
   title = 'in';
 
-  // fontColor = 'red';
+  fontColor = 'red';
   // fontSize  = .75;
 
   styleObj = {
