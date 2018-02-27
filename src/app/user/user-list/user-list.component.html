@@ -1,0 +1,14 @@
+<h3>User List</h3>
+<!-- - {{selectedUsrName}}-->
+<in-user-name [name]="users[0]"
+              [isSelected]="selectedUsrName===users[0]"
+              (selectUsr)="onSelectedUsr ( $event )"
+></in-user-name>
+<in-user-name [name]="users[1]"
+              [isSelected]="selectedUsrName===users[1]"
+              (selectUsr)="onSelectedUsr ( $event )"
+></in-user-name>
+<in-user-name [name]="users[2]"
+              [isSelected]="selectedUsrName===users[2]"
+              (selectUsr)="onSelectedUsr ( $event )"
+></in-user-name>

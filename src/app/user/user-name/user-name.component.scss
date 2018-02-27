@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  background-color: beige;
+  &:hover {
+    cursor: pointer;
+    color: #225982;
+    background-color: inherit;
+  }
+  &.user-name {
+    color: #009fe3;
+  }
+}
+
