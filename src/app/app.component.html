@@ -4,9 +4,15 @@
     Welcome to {{ title }}!
   </h1>
 
-  <img  *ngIf="showImg"
+  <img  *ngIf="showImg; else elseBlock"
         src="../assets/img/linkedin-logo.png"
         alt="logo">
+
+  <ng-template #elseBlock>
+    <img  src="../assets/img/logo.png"
+          alt="logo">
+  </ng-template>
+
 
   <hr>
   <button (click)="toggle()">toggle</button>
