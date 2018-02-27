@@ -8,6 +8,11 @@
         src="../assets/img/linkedin-logo.png"
         alt="logo">
 
+  <ng-template [ngIf]="showImg">
+    <img  src="../assets/img/linkedin-logo.png"
+          alt="logo">
+  </ng-template>
+
   <hr>
   <button (click)="toggle()">toggle</button>
   <in-user></in-user>
