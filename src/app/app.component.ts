@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  company = 'linkedin';
+  company = 'netTrek';
 
   title = 'in';
   showUserInfo = true;

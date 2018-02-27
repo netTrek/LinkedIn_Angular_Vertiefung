@@ -4,14 +4,14 @@
     Welcome to {{ title }}!
   </h1>
 
-  <div [ngSwitch]="company">
+  <ng-container [ngSwitch]="company">
     <img *ngSwitchCase="'netTrek'"
       src="../assets/img/logo.png" alt="netTrek">
     <img *ngSwitchCase="'github'"
       src="../assets/img/github.png" alt="github">
     <img *ngSwitchDefault=""
       src="../assets/img/linkedin-logo.png" alt="linkedIn">
-  </div>
+  </ng-container >
 
 
 <!--
