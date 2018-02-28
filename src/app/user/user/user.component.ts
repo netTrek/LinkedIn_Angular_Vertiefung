@@ -11,8 +11,9 @@ import { IUseMe } from '../../iuse-me';
 export class UserComponent implements OnInit {
   constructor ( public appModel: AppModelService,
                 @Inject ('useMe') useMe: IUseMe[],
+                @Inject ('useExist') useExist: any[],
                 login: LoginService ) {
-    console.log ( useMe );
+    console.log ( useMe, useExist );
   }
 
   ngOnInit () {
