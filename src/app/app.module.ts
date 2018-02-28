@@ -6,11 +6,11 @@ import { UserModule } from './user/user.module';
 import { AppModelService } from './app-model.service';
 import { IUseMe } from './iuse-me';
 
-class UseMe implements IUseMe {
+export class UseMe implements IUseMe {
   val = 123;
 }
 
-class UseMe2 implements IUseMe {
+export class UseMe2 implements IUseMe {
   val = 456;
 }
 
