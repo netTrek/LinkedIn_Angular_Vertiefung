@@ -9,7 +9,11 @@ import { LoginService } from './login.service';
   imports: [
     CommonModule
   ],
-  providers: [ LoginService ],
+  providers: [
+    LoginService,
+    { provide: 'users', useValue: 'Heike', multi: true },
+    { provide: 'username', useValue: 'Wird überschrieben'},
+  ],
   declarations: [UserComponent, UserListComponent, UserNameComponent],
   exports: [UserComponent]
 })

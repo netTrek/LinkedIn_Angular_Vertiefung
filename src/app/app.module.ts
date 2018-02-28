@@ -15,8 +15,10 @@ import { AppModelService } from './app-model.service';
   ],
   providers   : [
     AppModelService,
-    { provide: 'username', useValue: 'Saban Ünlü' },
-    { provide: 'users', useValue: 'Peter' }
+    { provide: 'username', useValue: 'Saban Ünlü'},
+    { provide: 'users', useValue: 'Peter', multi: true },
+    { provide: 'users', useValue: 'Hans', multi: true },
+    { provide: 'users', useValue: 'Frank', multi: true }
   ],
   bootstrap   : [ AppComponent ]
 } )

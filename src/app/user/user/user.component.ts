@@ -10,7 +10,7 @@ import { LoginService } from '../login.service';
 export class UserComponent implements OnInit {
   constructor( public appModel: AppModelService,
                login: LoginService,
-               @Inject('users') users: string,
+               @Inject('users') users: string[],
                @Inject('username') username: string, ) {
     console.log ( users, username );
   }
