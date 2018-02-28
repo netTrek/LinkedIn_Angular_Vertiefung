@@ -6,6 +6,12 @@
   <h2 [inHover]="fontColor">saban</h2>
   <h2 inHover="blue">ünlü</h2>
 
+  <button *inRole="'admin'">Admin</button>
+
+  <ng-template inRole="admin">
+    <h1>admin version</h1>
+  </ng-template>
+
   <in-user></in-user>
 
 
