@@ -4,12 +4,13 @@ import { LowercaseComponent } from './lowercase/lowercase.component';
 import { CurrencyComponent } from './currency/currency.component';
 import { DecimalComponent } from './decimal/decimal.component';
 import { PercentComponent } from './percent/percent.component';
+import { DateComponent } from './date/date.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent],
-  exports: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent]
+  declarations: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent],
+  exports: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent]
 })
 export class PipeSamplesModule { }
