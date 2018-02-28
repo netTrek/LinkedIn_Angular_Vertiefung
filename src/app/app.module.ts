@@ -5,15 +5,20 @@ import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 import { AppModelService } from './app-model.service';
 
-@NgModule({
+@NgModule ( {
   declarations: [
     AppComponent
   ],
-  imports: [
+  imports     : [
     BrowserModule,
     UserModule
   ],
-  providers: [ AppModelService ],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  providers   : [
+    AppModelService,
+    { provide: 'username', useValue: 'Saban Ünlü' },
+    { provide: 'users', useValue: 'Peter' }
+  ],
+  bootstrap   : [ AppComponent ]
+} )
+export class AppModule {
+}
