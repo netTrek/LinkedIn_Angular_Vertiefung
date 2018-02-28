@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class EchoPipe implements PipeTransform {
 
   transform ( value: any, ...args: any[] ): any {
-    console.log ( 'outpu ', value );
+    console.log ( 'output ', value );
     return value;
   }
 

@@ -10,7 +10,7 @@
   middle
 -->
 
-<in-user-name *ngFor="let user of users; even as e"
+<in-user-name *ngFor="let user of users | revers; even as e"
               [user]="user"
               [isSelected]="selectedUsr===user"
               [ngClass]="{even: e}"

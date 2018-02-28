@@ -8,14 +8,17 @@ import { DateComponent } from './date/date.component';
 import { SliceComponent } from './slice/slice.component';
 import { JsonComponent } from './json/json.component';
 import { EchoPipe } from './echo.pipe';
+import { ReversPipe } from './revers.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent, SliceComponent, JsonComponent,
-                 EchoPipe],
+                 EchoPipe,
+                 ReversPipe],
   exports: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent, SliceComponent, JsonComponent,
-            EchoPipe]
+            EchoPipe,
+            ReversPipe]
 })
 export class PipeSamplesModule { }
