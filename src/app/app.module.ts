@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
+import { PipeSamplesModule } from './pipe-samples/pipe-samples.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { UserModule } from './user/user.module';
   ],
   imports: [
     BrowserModule,
-    UserModule
+    UserModule,
+    PipeSamplesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
