@@ -7,12 +7,15 @@ import { PercentComponent } from './percent/percent.component';
 import { DateComponent } from './date/date.component';
 import { SliceComponent } from './slice/slice.component';
 import { JsonComponent } from './json/json.component';
+import { EchoPipe } from './echo.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent, SliceComponent, JsonComponent],
-  exports: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent, SliceComponent, JsonComponent]
+  declarations: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent, SliceComponent, JsonComponent,
+                 EchoPipe],
+  exports: [LowercaseComponent, CurrencyComponent, DecimalComponent, PercentComponent, DateComponent, SliceComponent, JsonComponent,
+            EchoPipe]
 })
 export class PipeSamplesModule { }
