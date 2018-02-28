@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 } )
 export class AppComponent {
 
+  counter = 0;
+
   title        = 'in';
   showUserInfo = true;
 

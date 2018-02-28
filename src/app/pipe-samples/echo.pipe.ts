@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe ( {
-  name: 'echo'
+  name: 'echo',
+  pure: false
 } )
 export class EchoPipe implements PipeTransform {
 
