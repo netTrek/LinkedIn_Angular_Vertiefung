@@ -9,7 +9,7 @@ import { LoginService } from './login.service';
   imports: [
     CommonModule
   ],
-  providers: [ LoginService ],
+  // providers: [ LoginService ],
   declarations: [UserComponent, UserListComponent, UserNameComponent],
   exports: [UserComponent]
 })
